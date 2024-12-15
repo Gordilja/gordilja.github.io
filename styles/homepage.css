@@ -1,0 +1,126 @@
+/* Game project Section */
+.p-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 8%;
+    background: #e6dcc8;
+
+    
+}
+
+/* ovo ti je skrolbar debeli */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #d4c6a8;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #d4c6a8;
+    }
+
+
+
+.p-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2.5rem 20px;
+    width: 90%;
+    max-width: 1000px;
+    background: #e6dcc8;
+    margin-top: 5rem;
+}
+
+.g-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2.5rem;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.g-image img {
+    max-width: 380px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.g-info .g-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.g-info p {
+    margin: 10px 0 40px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 68px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #1c1c1c;
+    border: 2px solid #1c1c1c;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(230, 220, 200, 0.5);
+}
+
+@media (max-width: 886px) {
+
+    .p-content {
+        max-width: 450px;
+    }
+
+    .g-item {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .g {
+        padding: 1rem;
+    }
+
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-info {
+        text-align: center;
+    }
+}
+
+@media (max-width: 569px) {
+    .p-main {
+        padding: 0 2%;
+    }
+}

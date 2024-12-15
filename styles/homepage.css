@@ -6,8 +6,6 @@
     width: 100%;
     padding: 0 8%;
     background: #e6dcc8;
-
-    
 }
 
 /* ovo ti je skrolbar debeli */
@@ -84,7 +82,8 @@
 }
 
 .btn:hover {
-    background-color: rgba(230, 220, 200, 0.5);
+    background-color: rgba(33, 46, 33, 1);
+    color: rgb(255, 255, 255);
 }
 
 @media (max-width: 886px) {

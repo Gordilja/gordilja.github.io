@@ -246,3 +246,16 @@ footer {
         flex-direction: column;
     }
 }
+
+@media (max-width: 470px) {
+    header h1 {
+        font-size: 1.2rem !important;
+    }
+    .menu-toggle span{
+        height: 2px;
+    }
+
+    .p-main {
+        padding: 0 1%;
+    }
+}

@@ -9,22 +9,22 @@
 }
 
 /* ovo ti je skrolbar debeli */
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
+::-webkit-scrollbar {
+    width: 10px;
+}
 
-    ::-webkit-scrollbar-track {
-        border-radius: 10px;
-    }
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
 
-    ::-webkit-scrollbar-thumb {
-        background: #d4c6a8;
-        border-radius: 10px;
-    }
+::-webkit-scrollbar-thumb {
+    background: #d4c6a8;
+    border-radius: 10px;
+}
 
-    ::-webkit-scrollbar-thumb:hover {
-        background: #d4c6a8;
-    }
+::-webkit-scrollbar-thumb:hover {
+    background: #d4c6a8;
+}
 
 
 
@@ -102,24 +102,20 @@
     .g {
         padding: 1rem;
     }
-
-    .project {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .project-image img {
-        width: 100%;
-        height: auto;
-    }
-
-    .project-info {
-        text-align: center;
-    }
 }
 
 @media (max-width: 569px) {
     .p-main {
         padding: 0 2%;
+    }
+}
+
+@media (max-width: 470px) {
+    .p-main {
+        padding: 0 1%;
+    }
+
+    .g-image img {
+        max-width: 306px;
     }
 }

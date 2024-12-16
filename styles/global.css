@@ -44,7 +44,8 @@ header {
 header .h-title {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #F4F3E8;/*site name*/
+    color: #F4F3E8;
+    /*site name*/
     min-width: 45%;
 }
 
@@ -123,11 +124,12 @@ header nav a:hover::after {
     margin: 1.5rem 0;
 }
 
-    .nav-menu ul li a {
-        font-family: 'Sansita', sans-serif;
-        text-decoration: none;
-        color: #F4F3E8; /*Home/About/Content*/
-    }
+.nav-menu ul li a {
+    font-family: 'Sansita', sans-serif;
+    text-decoration: none;
+    color: #F4F3E8;
+    /*Home/About/Content*/
+}
 
 .close-menu {
     position: absolute;
@@ -173,12 +175,19 @@ footer {
     color: #212E21;
 }
 
-.social p {
-    margin: 0;
+.social a {
+    text-decoration: none;
+    color: #F4F3E8;
 }
 
 
 @media (max-width: 768px) {
+
+    .header-container {
+        align-items: center;
+
+    }
+
     header {
         flex-direction: column;
         text-align: center;
@@ -191,7 +200,8 @@ footer {
     header nav ul {
         list-style: none;
         display: flex;
-        gap: 1.8rem;
+        gap: 0.1rem;
+        flex-direction: column;
     }
 }
 
@@ -232,6 +242,7 @@ footer {
     header nav ul {
         list-style: none;
         display: flex;
-        gap: 1.1rem;
+        gap: 0.1rem;
+        flex-direction: column;
     }
 }

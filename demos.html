@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Portfolio</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header(navigacija) -->
+    <header>
+        <div class="container header-container">
+            <h1 class="h-title">Portfolio - Milan Gordic</h1>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Unity Games</a></li>
+                    <li><a href="prototype.html" class="active">Demos</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact" id="contact-link">Contact</a></li>
+                </ul>
+                <!-- Close Menu Icon -->
+                <div class="close-menu" id="close-menu">&times;</div>
+            </nav>
+            <!-- Menu -->
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main class='p-main'>
+        <div class="p-content">
+            <section class="g-item">
+                <div class="g-image">
+                    <img controls="" src="assets/DeliveryIdle.jpg" alt="Delivery Idle">
+                </div>
+                <div class="g-info">
+                    <h2 class="g-title">Delivery Idle</h2>
+                    <p>
+                        A multiplayer game demo made in <strong> Unity </strong> featuring local player data storage (name, rating, coins, address). 
+                        It utilizes a Master/Client connection where clients connect via a mobile app (Android, iOS) to place food orders. 
+                        The player can accept or decline orders, receiving ratings and gold based on their performance.
+                    </p>
+                    <a href="https://youtu.be/fm015Gfa6vE" target=”_blank” class="btn">Link</a>
+                </div>
+            </section>
+            <section class="g-item">
+                <div class="g-image">
+                    <img controls="" src="assets/landscape_comp.jpeg" alt="Line Battles">
+                </div>
+                <div class="g-info">
+                    <h2 class="g-title">Line Battles</h2>
+                    <p>
+                        A Fortnite map made in <strong>UEFN (Unreal Editor for Fortnite) </strong> inspired by the classic Hero Line Wars from Warcraft 3. This prototype, developed as a weekend hobby project, challenges players to outlast their opponents. 
+                        Send waves of monsters to overwhelm your enemy or upgrade your weapon to defend and survive—strategic choices will determine the winner.
+                    </p>
+                    <a href="https://www.fortnite.com/@djomlagames/8332-5186-4587?lang=en-US" target=”_blank” class="btn">Link</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <p class="email">milan.gordic3@hotmail.com</p>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/milangordic3/" target=”_blank”>in</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+</body>
+
+</html>

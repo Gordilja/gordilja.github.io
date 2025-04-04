@@ -42,7 +42,7 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 2rem;
-    max-height: 200px;
+    max-height: 300px;
     margin-bottom: 40px;
 }
 
@@ -51,7 +51,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 4.5em;
+    height: 5.5em;
     overflow-y: auto; 
 }
 
@@ -76,7 +76,7 @@
 .g-info{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     height: 100%;
     flex: 1;
     font-size: 1.2rem;
@@ -88,18 +88,15 @@
     justify-content: center;
     align-items: center;
     width: 180px;
-    height: 60px;
+    height: 40px;
     font-size: 16px;
     color: white;
     border: 2px solid white;
     border-radius: 12px;
     text-decoration: none;
     font-weight: 700;
+    margin-top: 1%;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.button-container {
-    margin-top: auto; 
 }
 
 .btn:hover {

@@ -1,19 +1,16 @@
-// ============================================================
-// nav.js — runs on every page.
-// Currently: live status-bar clock (Belgrade timezone, CET label).
-// Tabs are plain <a href> links so no nav-toggle logic is needed.
-// ============================================================
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+const closeMenu = document.getElementById("close-menu");
+const contactLink = document.getElementById("contact-link");
 
-function tickClock() {
-  const el = document.getElementById('clock');
-  if (!el) return;
-  el.textContent = new Intl.DateTimeFormat('en-GB', {
-    timeZone: 'Europe/Belgrade',
-    hour: '2-digit',
-    minute: '2-digit',
-    hour12: false,
-  }).format(new Date());
-}
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.add("open");
+});
 
-tickClock();
-setInterval(tickClock, 30000);
+closeMenu.addEventListener("click", () => {
+    navMenu.classList.remove("open");
+});
+
+contactLink.addEventListener("click", () => {
+    navMenu.classList.remove("open");
+});

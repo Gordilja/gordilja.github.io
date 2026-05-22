@@ -1,98 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unreal - Milan Gordic</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- Stylesheets -->
+    <title>Home - Portfolio</title>
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/projectpages.css">
-    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap" rel="stylesheet">
 </head>
-<body data-bg="aurora" data-density="compact" data-scan="on">
 
-<div class="stage">
-  <!-- ============== STATUS BAR ============== -->
-  <div class="statusbar">
-    <span class="dot"></span>
-    <div class="brand">MILAN_GORDIC <span>//</span> PORTFOLIO.exe</div>
-    <div class="meta">
-      <span class="hide-sm">BUILD&nbsp;v6.9</span>
-      <span class="hide-sm">FPS&nbsp;420</span>
-      <span>
-        <span id="clock">--:--</span>
-        <span class="clock-zone">CET</span>
-      </span>
-    </div>
-  </div>
-
-  <div class="pageframe">
-
-    <!-- ============== TOPBAR ============== -->
-    <div class="topbar" style="margin-bottom: 28px;">
-      <span class="role-tag">SESSION · GAME DEVELOPER · OPEN TO WORK</span>
-      <div class="tabs" role="tablist">
-        <a class="tab" href="index.html">UNITY</a>
-        <a class="tab" href="uefn.html">UEFN</a>
-        <a class="tab active" href="unreal.html">UNREAL</a>
-        <a class="tab" href="about.html">ABOUT</a>
-      </div>
-    </div>
-
-    <!-- ============== SECTION HEAD ============== -->
-    <div class="sec-head">
-      <span class="lbl">// SELECT.PROJECT</span>
-      <span class="ctx">ENGINE: UNREAL · 1 ENTRY</span>
-      <span class="rule"></span>
-    </div>
-
-    <!-- ============== PROJECT LIST ============== -->
-    <div class="projects">
-      <div class="project">
-        <div class="p-num">
-          <span>// ID 01</span>
-        </div>
-        <div class="p-body">
-          <div class="p-tags">
-            <span class="p-tag">MOBA</span>
-            <span class="p-tag">PROTOTYPE</span>
-          </div>
-          <h3 class="p-title">MOBA Prototype</h3>
-          <p class="p-desc">Quick MOBA prototype with top-down controls, dynamic projectile effects (collision + targeting), and camera shake for ability feedback. Built entirely in Blueprints for rapid iteration.</p>
-          <div class="p-stats">
-            <div class="skill-pills">
-                <span class="p-tag engine-unreal">UNREAL ENGINE</span>
-                <span class="p-tag lang-bp">BLUEPRINTS</span>
-                <span class="p-tag dif-skill">VFX</span>
+<body>
+    <!-- Header(navigacija) -->
+    <header>
+        <div class="container header-container">
+            <h1 class="h-title">Milan Gordic</h1>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Unity</a></li>
+                    <li><a href="uefn.html">UEFN</a></li>
+                    <li><a href="unreal.html" class="active">Unreal</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!--<li><a href="#contact" id="contact-link">Contact</a></li>-->
+                </ul>
+                <!-- Close Menu Icon -->
+                <div class="close-menu" id="close-menu">&times;</div>
+            </nav>
+            <!-- Menu -->
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-          </div>
-          <a class="p-action" href="https://youtu.be/mFn1d5QL-GU?si=7EwujVidOm7JAarx" target="_blank" rel="noopener">
-            WATCH <span>&#x25B8;</span>
-          </a>
         </div>
-        <div class="p-thumb-wrap">
-          <span class="ch tl"></span><span class="ch br"></span>
-          <img class="p-thumb" src="assets/moba.png" alt="MOBA Prototype">
+    </header>
+    <main class='p-main'>
+        <div class="p-content">
+            <section class="g-item">
+                <div class="g-image">
+                    <img controls="" src="assets/moba.png" alt="MOBA">
+                </div>
+                <div class="g-info">
+                    <h2 class="g-title">MOBA Prototype</h2>
+                    <p class="g-paragraph">
+                        Developed a quick MOBA prototype featuring edited top-down controls, 
+                        dynamic projectile effects (including collision and targeting systems) 
+                        and camera shake for impactful ability feedback. Implemented entirely in Blueprints for rapid iteration.
+                    </p>
+                    <a href="https://youtu.be/mFn1d5QL-GU?si=7EwujVidOm7JAarx" target=”_blank” class="btn">Video</a>
+                </div>
+            </section>
         </div>
-      </div>
-    </div>
+    </main>
 
-    <!-- ============== COMMAND BAR / FOOTER ============== -->
-    <div class="commandbar">
-      <span><span class="kbd">E</span><a href="mailto:milan.gordic3@hotmail.com">milan.gordic3@hotmail.com</a></span>
-      <span class="sep">|</span>
-      <span><span class="kbd">L</span><a href="https://www.linkedin.com/in/milangordic3/" target="_blank" rel="noopener">LINKEDIN &#x2197;</a></span>
-      <span class="end">CTRL+C TO QUIT</span>
-    </div>
-  </div>
-</div>
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <p class="email">milan.gordic3@hotmail.com</p>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/milangordic3/" target=”_blank”>in</a>
+            </div>
+        </div>
+    </footer>
 
-<script src="scripts/nav.js"></script>
+    <script src="scripts/nav.js"></script>
 </body>
+
 </html>

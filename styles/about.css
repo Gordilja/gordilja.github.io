@@ -1,108 +1,101 @@
-/* ============================================================
-   about.css — About page layout (portrait + bio + skills strip)
-   ============================================================ */
-
-.about {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 40px;
-  align-items: start;
-  margin-bottom: 28px;
-}
-.about .portrait-wrap {
-  position: relative;
-}
-.about .portrait-wrap img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
-  display: block;
-  filter: contrast(1.05) saturate(1.05);
-}
-.about .portrait-wrap .ch.tl { position: absolute; top: -3px; left: -3px; width: 18px; height: 18px; border-top: 2px solid var(--hud-magenta); border-left: 2px solid var(--hud-magenta); pointer-events: none; }
-.about .portrait-wrap .ch.br { position: absolute; bottom: -3px; right: -3px; width: 18px; height: 18px; border-bottom: 2px solid var(--hud-magenta); border-right: 2px solid var(--hud-magenta); pointer-events: none; }
-.about .portrait-wrap .badge {
-  position: absolute; left: 0; bottom: -36px;
-  font-family: var(--hud-mono);
-  font-size: 10px;
-  color: var(--hud-cyan);
-  letter-spacing: 0.14em;
-  display: flex; flex-direction: column; gap: 4px;
-}
-.about .portrait-wrap .badge .v { color: #fff; font-size: 11px; }
-
-.about .bio h2 {
-  margin: 0 0 16px;
-  font-family: var(--font-display);
-  font-size: 44px;
-  font-weight: 800;
-  letter-spacing: -0.01em;
-  color: #fff;
-  line-height: 1;
-}
-.about .bio p {
-  margin: 0 0 16px;
-  font-size: 16px;
-  line-height: 1.6;
-  color: rgba(234, 241, 255, 0.82);
-  max-width: 60ch;
-}
-.about .bio p strong { color: #fff; font-weight: 800; }
-
-/* ============================================================
-   SKILLS strip
-   ============================================================ */
-.skills {
-  margin-top: 28px;
-  padding: 28px;
-  background: rgba(3, 20, 58, 0.55);
-  border: 1px solid var(--hud-line);
-  clip-path: polygon(
-    14px 0, 100% 0,
-    100% calc(100% - 14px), calc(100% - 14px) 100%,
-    0 100%, 0 14px
-  );
-}
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-  margin-top: 16px;
-}
-.skill-col h4 {
-  margin: 0 0 14px;
-  font-family: var(--hud-mono);
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  color: rgba(234, 241, 255, 0.5);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.skill-col h4::before {
-  content: "";
-  width: 8px; height: 8px;
-  background: var(--hud-cyan);
-  box-shadow: 0 0 8px var(--hud-cyan);
-}
-/* Per-column accent dot — semantic engine colors */
-.skill-col.engines h4::before  { background: #00E5D1;            box-shadow: 0 0 8px #00E5D1; }
-.skill-col.langs h4::before    { background: var(--hud-amber);   box-shadow: 0 0 8px var(--hud-amber); }
-.skill-col.focus h4::before    { background: var(--hud-magenta); box-shadow: 0 0 8px var(--hud-magenta); }
-
-.skill-pills { display: flex; flex-wrap: wrap; gap: 8px; }
-.skill-pills .p-tag {
-  font-size: 11px;
-  padding: 6px 12px;
+/* About Section */
+.about-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 30%;
+    min-height: 70vh;
+    margin-bottom: 5%;
 }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
-@media (max-width: 980px) {
-  .about { grid-template-columns: 1fr; gap: 28px; }
-  .about .portrait-wrap { max-width: 280px; }
-  .about .portrait-wrap .badge { position: static; margin-top: 16px; }
-  .skills-grid { grid-template-columns: 1fr; gap: 24px; }
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5px;
+    padding: 1rem 0;
+}
+
+.about-content {
+    flex: 1 1 60%;
+}
+
+.about-title {
+    font-family: "Coda", system-ui;
+    display: flex;
+    justify-content: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-align: justify;
+}
+
+.about-content strong {
+    font-weight: 700;
+    color:white;
+    font-family: "Coda", system-ui;
+}
+
+.about-image {
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 4px solid white;
+    border-radius: 4px;
+}
+
+@media (max-width: 780px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .about-image img {
+        max-width: 80%;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .about-container {
+        margin-top: 3rem;
+    }
 }

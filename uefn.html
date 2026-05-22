@@ -1,120 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Portfolio</title>
+    <title>UEFN - Milan Gordic</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/projectpages.css">
+    <link rel="stylesheet" href="styles/about.css">
 </head>
+<body data-bg="aurora" data-density="compact" data-scan="on">
 
-<body>
-    <!-- Header(navigacija) -->
-    <header>
-        <div class="container header-container">
-            <h1 class="h-title">Milan Gordic</h1>
-            <nav class="nav-menu" id="nav-menu">
-                <ul>
-                    <li><a href="index.html">Unity</a></li>
-                    <li><a href="uefn.html" class="active">UEFN</a></li>
-                    <li><a href="unreal.html">Unreal</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <!--<li><a href="#contact" id="contact-link">Contact</a></li>-->
-                </ul>
-                <!-- Close Menu Icon -->
-                <div class="close-menu" id="close-menu">&times;</div>
-            </nav>
-            <!-- Menu -->
-            <div class="menu-toggle" id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+<div class="stage">
+  <!-- ============== STATUS BAR ============== -->
+  <div class="statusbar">
+    <span class="dot"></span>
+    <div class="brand">MILAN_GORDIC <span>//</span> PORTFOLIO.exe</div>
+    <div class="meta">
+      <span class="hide-sm">BUILD&nbsp;v6.9</span>
+      <span class="hide-sm">FPS&nbsp;420</span>
+      <span>
+        <span id="clock">--:--</span>
+        <span class="clock-zone">CET</span>
+      </span>
+    </div>
+  </div>
+
+  <div class="pageframe">
+
+    <!-- ============== TOPBAR ============== -->
+    <div class="topbar" style="margin-bottom: 28px;">
+      <span class="role-tag">SESSION · GAME DEVELOPER · OPEN TO WORK</span>
+      <div class="tabs" role="tablist">
+        <a class="tab" href="index.html">UNITY</a>
+        <a class="tab active" href="uefn.html">UEFN</a>
+        <a class="tab" href="unreal.html">UNREAL</a>
+        <a class="tab" href="about.html">ABOUT</a>
+      </div>
+    </div>
+
+    <!-- ============== SECTION HEAD ============== -->
+    <div class="sec-head">
+      <span class="lbl">// SELECT.PROJECT</span>
+      <span class="ctx">ENGINE: UEFN · 5 ENTRIES</span>
+      <span class="rule"></span>
+    </div>
+
+    <!-- ============== PROJECT LIST ============== -->
+    <div class="projects">
+      <div class="project">
+        <div class="p-num">
+          <span>// ID 01</span>
+        </div>
+        <div class="p-body">
+          <div class="p-tags">
+            <span class="p-tag">FFA</span>
+            <span class="p-tag">STAR WARS</span>
+          </div>
+          <h3 class="p-title">Imperial Arena</h3>
+          <p class="p-desc">A competitive free-for-all mode built in UEFN with Verse scripting. Player-based win tracking, dynamic end-game conditions, ranking, and custom scoring.</p>
+          <div class="p-stats">
+            <div class="skill-pills">
+                <span class="p-tag engine-uefn">UEFN</span>
+                <span class="p-tag lang-verse">VERSE</span>
+                <span class="p-tag dif-skill">GAME DESIGN</span>
+                <span class="p-tag dif-skill">LEVEL DESIGN</span>
             </div>
+          </div>
+          <a class="p-action" href="https://www.fortnite.com/@gordilja/7673-9860-5874" target="_blank" rel="noopener">
+            OPEN <span>&#x25B8;</span>
+          </a>
         </div>
-    </header>
-    <main class='p-main'>
-        <div class="p-content">
-            <section class="g-item">
-                <div class="g-image">
-                    <img controls="" src="assets/IAThumbnail.png" alt="Arena4v4">
-                </div>
-                <div class="g-info">
-                    <h2 class="g-title">Imperial Arena</h2>
-                    <p class="g-paragraph">
-                        A competitive free for all game mode developed in UEFN with Verse scripting, inspired by previous map, Jugle Strike, with Star Wars theme. 
-                        Features custom round management including player-based win tracking, round state logic, dynamic end game conditions, ranking system and custom score points.
-                    </p>
-                    <a href="https://www.fortnite.com/@gordilja/7673-9860-5874" target=”_blank” class="btn">Link</a>
-                </div>
-            </section>
-            <section class="g-item">
-                <div class="g-image">
-                    <img controls="" src="assets/jgstrike.png" alt="Arena4v4">
-                </div>
-                <div class="g-info">
-                    <h2 class="g-title">Jungle Strike (PvPvE)</h2>
-                    <p class="g-paragraph">
-                        A competitive free for all game mode developed in UEFN with Verse scripting, inspired by Battle Royale and Free For All formats in fortnite. 
-                        Features custom round management including player-based win tracking, round state logic, dynamic end game conditions, ranking system and custom score points.
-                    </p>
-                    <a href="https://www.fortnite.com/@gordilja/0049-3168-1703" target=”_blank” class="btn">Link</a>
-                </div>
-            </section>
-            <section class="g-item">
-                <div class="g-image">
-                    <img controls="" src="assets/Arena4v4.jpg" alt="Arena4v4">
-                </div>
-                <div class="g-info">
-                    <h2 class="g-title">Arena4v4</h2>
-                    <p class="g-paragraph">
-                        A competitive capture point game mode developed in UEFN with Verse scripting, inspired by League of Legends ARAM Mayhem format. 
-                        Features custom round management including team-based win tracking, round state logic and dynamic end game conditions.
-                    </p>
-                    <a href="https://www.fortnite.com/@gordilja/0512-0310-4788?lang=en-US" target=”_blank” class="btn">Link</a>
-                </div>
-            </section>
-            <section class="g-item">
-                <div class="g-image">
-                    <img controls="" src="assets/G25Thumbnail.png" alt="G - 25">
-                </div>
-                <div class="g-info">
-                    <h2 class="g-title">G - 25</h2>
-                    <p class="g-paragraph">
-                        Created in UEFN during the Game Crafting event hosted by <strong>Epic Games</strong>, <strong>3Lateral</strong>, <strong>and Materriya </strong>. 
-                        In this sci-fi survival experience, players must cleanse a contaminated zone by hacking key devices while avoiding elimination - adapt quickly, or be consumed by the virus.
-                    </p>
-                    <a href="https://www.fortnite.com/@gordilja/2412-1879-0789?lang=en-US" target=”_blank” class="btn">Link</a>
-                </div>
-            </section>
-            <section class="g-item">
-                <div class="g-image">
-                    <img controls="" src="assets/landscape_comp.jpeg" alt="Line Battles">
-                </div>
-                <div class="g-info">
-                    <h2 class="g-title">Line Battles</h2>
-                    <p class="g-paragraph">
-                        Inspired by the classic Hero Line Wars from Warcraft 3. This prototype, developed as a weekend hobby project, challenges players to outlast their opponents. 
-                        Send waves of monsters to overwhelm your enemy or upgrade your weapon to defend and survive—strategic choices will determine the winner.
-                    </p>
-                    <a href="https://www.fortnite.com/@djomlagames/8332-5186-4587?lang=en-US" target=”_blank” class="btn">Link</a>
-                </div>
-            </section>
+        <div class="p-thumb-wrap">
+          <span class="ch tl"></span><span class="ch br"></span>
+          <img class="p-thumb" src="assets/IAThumbnail.png" alt="Imperial Arena">
         </div>
-    </main>
-
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="footer-container">
-            <p class="email">milan.gordic3@hotmail.com</p>
-            <div class="social">
-                <a href="https://www.linkedin.com/in/milangordic3/" target=”_blank”>in</a>
+      </div>
+      <div class="project">
+        <div class="p-num">
+          <span>// ID 02</span>
+        </div>
+        <div class="p-body">
+          <div class="p-tags">
+            <span class="p-tag">PVP</span>
+            <span class="p-tag">PVE</span>
+            <span class="p-tag">BR</span>
+          </div>
+          <h3 class="p-title">Jungle Strike</h3>
+          <p class="p-desc">Free-for-all mode in UEFN inspired by Battle Royale and FFA formats. Round state logic, ranking, and dynamic end-game conditions.</p>
+          <div class="p-stats">
+              <div class="skill-pills">
+                <span class="p-tag engine-uefn">UEFN</span>
+                <span class="p-tag lang-verse">VERSE</span>
+                <span class="p-tag dif-skill">GAME DESIGN</span>
+              </div>
+          </div>
+          <a class="p-action" href="https://www.fortnite.com/@gordilja/0049-3168-1703" target="_blank" rel="noopener">
+            OPEN <span>&#x25B8;</span>
+          </a>
+        </div>
+        <div class="p-thumb-wrap">
+          <span class="ch tl"></span><span class="ch br"></span>
+          <img class="p-thumb" src="assets/jgstrike.png" alt="Jungle Strike">
+        </div>
+      </div>
+      <div class="project">
+        <div class="p-num">
+          <span>// ID 03</span>
+        </div>
+        <div class="p-body">
+          <div class="p-tags">
+            <span class="p-tag">CAPTURE</span>
+            <span class="p-tag">ARAM</span>
+          </div>
+          <h3 class="p-title">Arena 4v4</h3>
+          <p class="p-desc">Capture-point mode in UEFN inspired by League of Legends ARAM Mayhem. Team-based win tracking, round logic, and dynamic end-game conditions.</p>
+          <div class="p-stats">
+            <div class="skill-pills">
+                <span class="p-tag engine-uefn">UEFN</span>
+                <span class="p-tag lang-verse">VERSE</span>
+                <span class="p-tag dif-skill">GAME DESIGN</span>
+                <span class="p-tag dif-skill">LEVEL DESIGN</span>
             </div>
+          </div>
+          <a class="p-action" href="https://www.fortnite.com/@gordilja/0512-0310-4788?lang=en-US" target="_blank" rel="noopener">
+            OPEN <span>&#x25B8;</span>
+          </a>
         </div>
-    </footer>
+        <div class="p-thumb-wrap">
+          <span class="ch tl"></span><span class="ch br"></span>
+          <img class="p-thumb" src="assets/Arena4v4.jpg" alt="Arena 4v4">
+        </div>
+      </div>
+      <div class="project">
+        <div class="p-num">
+          <span>// ID 04</span>
+        </div>
+        <div class="p-body">
+          <div class="p-tags">
+            <span class="p-tag">SCI-FI</span>
+            <span class="p-tag">SURVIVAL</span>
+          </div>
+          <h3 class="p-title">G - 25</h3>
+          <p class="p-desc">Built during the Game Crafting event hosted by <strong>Epic Games</strong>, <strong>3Lateral</strong>, and <strong>Materriya</strong>. Cleanse a contaminated zone by hacking devices while avoiding elimination.</p>
+          <div class="p-stats">
+            <div class="skill-pills">
+                <span class="p-tag engine-uefn">UEFN</span>
+                <span class="p-tag lang-verse">VERSE</span>
+                <span class="p-tag dif-skill">VFX</span>
+                <span class="p-tag dif-skill">GAME DESIGN</span>
+                <span class="p-tag dif-skill">LEVEL DESIGN</span>
+            </div>
+          </div>
+          <a class="p-action" href="https://www.fortnite.com/@gordilja/2412-1879-0789?lang=en-US" target="_blank" rel="noopener">
+            OPEN <span>&#x25B8;</span>
+          </a>
+        </div>
+        <div class="p-thumb-wrap">
+          <span class="ch tl"></span><span class="ch br"></span>
+          <img class="p-thumb" src="assets/G25Thumbnail.png" alt="G - 25">
+        </div>
+      </div>
+      <div class="project">
+        <div class="p-num">
+          <span>// ID 05</span>
+        </div>
+        <div class="p-body">
+          <div class="p-tags">
+            <span class="p-tag">RTS</span>
+          </div>
+          <h3 class="p-title">Line Battles</h3>
+          <p class="p-desc">A weekend hobby project inspired by Hero Line Wars from Warcraft 3. Send waves of monsters or upgrade your weapon to outlast opponents.</p>
+          <div class="p-stats">
+            <div class="skill-pills">
+                <span class="p-tag engine-uefn">UEFN</span>
+                <span class="p-tag lang-verse">VERSE</span>
+                <span class="p-tag dif-skill">GAME DESIGN</span>
+                <span class="p-tag dif-skill">LEVEL DESIGN</span>
+            </div>
+          </div>
+          <a class="p-action" href="https://www.fortnite.com/@djomlagames/8332-5186-4587?lang=en-US" target="_blank" rel="noopener">
+            OPEN <span>&#x25B8;</span>
+          </a>
+        </div>
+        <div class="p-thumb-wrap">
+          <span class="ch tl"></span><span class="ch br"></span>
+          <img class="p-thumb" src="assets/landscape_comp.jpeg" alt="Line Battles">
+        </div>
+      </div>
+    </div>
 
-    <script src="scripts/nav.js"></script>
+    <!-- ============== COMMAND BAR / FOOTER ============== -->
+    <div class="commandbar">
+      <span><span class="kbd">E</span><a href="mailto:milan.gordic3@hotmail.com">milan.gordic3@hotmail.com</a></span>
+      <span class="sep">|</span>
+      <span><span class="kbd">L</span><a href="https://www.linkedin.com/in/milangordic3/" target="_blank" rel="noopener">LINKEDIN &#x2197;</a></span>
+      <span class="end">CTRL+C TO QUIT</span>
+    </div>
+  </div>
+</div>
+
+<script src="scripts/nav.js"></script>
 </body>
-
 </html>

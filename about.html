@@ -1,81 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Portfolio</title>
+    <title>About - Milan Gordic</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/projectpages.css">
     <link rel="stylesheet" href="styles/about.css">
-    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap" rel="stylesheet">
 </head>
+<body data-bg="aurora" data-density="compact" data-scan="on">
 
-<body>
-    <!-- Header(navigacija) -->
-    <header>
-        <div class="container header-container">
-            <h1 class="h-title">Milan Gordic</h1>
-            <nav class="nav-menu" id="nav-menu">
-                <ul>
-                    <li><a href="index.html">Unity</a></li>
-                    <li><a href="uefn.html">UEFN</a></li>
-                    <li><a href="unreal.html">Unreal</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
-                    <!--<li><a href="#contact" id="contact-link">Contact</a></li>-->
-                </ul>
-                <!-- Close Menu Icon -->
-                <div class="close-menu" id="close-menu">&times;</div>
-            </nav>
-            <!-- Menu -->
-            <div class="menu-toggle" id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </header>
-    <!-- About Sekcija -->
-   <main class="about-main">
-        <div class="container about-container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="assets/profilePicture.jpg" alt="Milan's Image">
-                </div>
-                <p>
-                    <strong>Game Developer — Unity, Unreal & UEFN</strong>
-                    <br>
-                    Several years building gameplay systems, multiplayer features, and live-service tools across <strong>Unity</strong>, <strong>Unreal Engine</strong>, and <strong>UEFN</strong>. I care about the details that players feel but can't name — responsive controls, stable framerates, mechanics that click.
-                </p>
-                <p>
-                    <strong>What I work on:</strong>
-                    <ul style="padding-left: 5%;">
-                        <li>Gameplay systems and combat mechanics</li>
-                        <li>Multiplayer — client/server architecture, matchmaking, session handling</li>
-                        <li>Performance — lean builds, stable framerates, profiling and optimization</li>
-                    </ul>
-                </p>
-                <p>
-                    <strong>How I work:</strong>
-                    <br>
-                    C#, C++, Blueprints. I've led small teams, worked directly with clients and designers, and delivered prototypes to publishers under weekly deadlines. I pick up new tools quickly and don't need much hand-holding to get productive.
-                </p>
-                <p>
-                    Currently freelancing and building personal projects. Looking for the right team to join full-time — preferably one that ships things people actually play.
-                </p>
-            </div>
-        </div>
-    </main>
+<div class="stage">
+  <!-- ============== STATUS BAR ============== -->
+  <div class="statusbar">
+    <span class="dot"></span>
+    <div class="brand">MILAN_GORDIC <span>//</span> PORTFOLIO.exe</div>
+    <div class="meta">
+      <span class="hide-sm">BUILD&nbsp;v6.9</span>
+      <span class="hide-sm">FPS&nbsp;420</span>
+      <span>
+        <span id="clock">--:--</span>
+        <span class="clock-zone">CET</span>
+      </span>
+    </div>
+  </div>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="footer-container">
-            <p class="email">milan.gordic3@hotmail.com</p>
-            <div class="social" href="https://www.linkedin.com/in/milangordic3/">
-                <a href="https://www.linkedin.com/in/milangordic3/" target=”_blank”>in</a>
-            </div>
+  <div class="pageframe">
+
+    <!-- ============== TOPBAR ============== -->
+    <div class="topbar" style="margin-bottom: 28px;">
+      <span class="role-tag">SESSION · GAME DEVELOPER · OPEN TO WORK</span>
+      <div class="tabs" role="tablist">
+        <a class="tab" href="index.html">UNITY</a>
+        <a class="tab" href="uefn.html">UEFN</a>
+        <a class="tab" href="unreal.html">UNREAL</a>
+        <a class="tab active" href="about.html">ABOUT</a>
+      </div>
+    </div>
+
+    <!-- ============== SECTION HEAD ============== -->
+    <div class="sec-head">
+      <span class="lbl">// PROFILE</span>
+      <span class="ctx">OPERATOR: MILAN GORDIC · STATUS: AVAILABLE</span>
+      <span class="rule"></span>
+    </div>
+
+    <!-- ============== ABOUT ============== -->
+    <section class="about">
+      <div class="portrait-wrap">
+        <span class="ch tl"></span><span class="ch br"></span>
+        <img src="assets/profilePicture.jpg" alt="Milan Gordic">
+        <div class="badge">
+          <span>// STATUS</span>
+          <span class="v" style="color: var(--hud-cyan);">● OPEN TO WORK</span>
         </div>
-    </footer>
-    <script src="scripts/nav.js"></script>
+      </div>
+      <div class="bio">
+        <h2>Hi, I'm Milan.</h2>
+        <p>
+          I'm a game developer with several years building gameplay systems,
+          multiplayer features, and live-service tools across <strong>Unity</strong>,
+          <strong>Unreal Engine</strong>, and <strong>UEFN</strong>. I care about
+          the details that players feel but can't name — responsive controls,
+          stable framerates, mechanics that click.
+        </p>
+        <p>
+          I've led small teams, worked directly with clients and designers,
+          and delivered prototypes to publishers under weekly deadlines.
+          I pick up new tools quickly and don't need much hand-holding to
+          get productive.
+        </p>
+        <p>
+          Currently freelancing and building personal projects. Looking for
+          the right team to join full-time — preferably one that ships things
+          people actually play.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============== SKILLS ============== -->
+    <section class="skills">
+      <div class="sec-head" style="margin-bottom:8px;">
+        <span class="lbl">// SKILLS.DAT</span>
+        <span class="ctx">LOADED · 12 ENTRIES</span>
+        <span class="rule"></span>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-col engines">
+          <h4>ENGINES</h4>
+          <div class="skill-pills">
+            <span class="p-tag engine-unity">UNITY</span>
+            <span class="p-tag engine-uefn">UEFN</span>
+            <span class="p-tag engine-unreal">UNREAL ENGINE 5</span>
+          </div>
+        </div>
+        <div class="skill-col langs">
+          <h4>LANGUAGES/SCRIPTING</h4>
+          <div class="skill-pills">
+            <span class="p-tag lang-cs">C#</span>
+            <span class="p-tag lang-cpp">C++</span>
+            <span class="p-tag lang-bp">BLUEPRINTS</span>
+            <span class="p-tag lang-verse">VERSE</span>
+          </div>
+        </div>
+        <div class="skill-col focus">
+          <h4>FOCUS AREAS</h4>
+          <div class="skill-pills">
+            <span class="p-tag">GAMEPLAY SYSTEMS</span>
+            <span class="p-tag">GAME DESIGN</span>
+            <span class="p-tag">MULTIPLAYER</span>
+            <span class="p-tag">PERFORMANCE</span>
+            <span class="p-tag">PROTOTYPING</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== COMMAND BAR / FOOTER ============== -->
+    <div class="commandbar">
+      <span><span class="kbd">E</span><a href="mailto:milan.gordic3@hotmail.com">milan.gordic3@hotmail.com</a></span>
+      <span class="sep">|</span>
+      <span><span class="kbd">L</span><a href="https://www.linkedin.com/in/milangordic3/" target="_blank" rel="noopener">LINKEDIN &#x2197;</a></span>
+      <span class="end">CTRL+C TO QUIT</span>
+    </div>
+  </div>
+</div>
+
+<script src="scripts/nav.js"></script>
 </body>
-
 </html>
